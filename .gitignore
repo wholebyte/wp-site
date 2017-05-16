@@ -4,6 +4,7 @@
 content/*
 
 # WordPress
+wp
 wp/*
 
 # Dotenv
