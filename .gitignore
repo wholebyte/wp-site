@@ -1,0 +1,12 @@
+.DS_Store
+
+# Application
+content/*
+
+# WordPress
+wp/*
+
+# Dotenv
+.env
+.env.*
+!.env.example
