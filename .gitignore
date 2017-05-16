@@ -2,6 +2,7 @@
 
 # Application
 content/*
+!content/.gitkeep
 
 # WordPress
 wp
