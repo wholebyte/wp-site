@@ -60,10 +60,6 @@ define('AUTOMATIC_UPDATER_DISABLED', true);
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
 define('DISALLOW_FILE_EDIT', true);
 
-define('WP_HOME','https://' . basename(__DIR__));
-define('WP_SITEURL','https://' . basename(__DIR__) . '/wp');
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
-define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . '/content' );
 
 /**
  * Bootstrap WordPress
