@@ -1,7 +1,15 @@
 #!/bin/bash
 
-ln -s ../wp/core wp
+if [ ! -L wp ] ; then
+  ln -s ../wp/core wp
+fi
 cd content
-ln -s ../../wp/themes themes
-ln -s ../../wp/mu-plugins mu-plugins
-ln -s ../../wp/plugins plugins
+if [ ! -L themes ] ; then
+  ln -s ../../wp/themes themes
+fi
+if [ ! -L mu-plugins ] ; then
+  ln -s ../../wp/mu-plugins mu-plugins
+fi
+if [ ! -L plugins ] ; then
+  ln -s ../../wp/plugins plugins
+fi
